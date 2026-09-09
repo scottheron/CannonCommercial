@@ -478,11 +478,11 @@ article.card p {
 }
 
 /* Footer */
-.site-footer {
-  background: var(--color-primary-dark);
+.site-footer div p{
+  background: var(--color-section-dark);
   color: var(--color-white);
-  padding: 1.5rem 0;
-  text-align: center;
+  padding: 0;
+  text-align: left;
   font-size: 0.875rem;
   opacity: 0.9;
 }
