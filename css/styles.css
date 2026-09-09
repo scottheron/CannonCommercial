@@ -270,6 +270,13 @@ a:hover {
   padding: 0 5rem 0 5rem;
 }
 
+.card-grid-recentListings {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding: 0 5rem 0 5rem;
+}
+
 .card {
   font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -489,6 +496,10 @@ article.card p {
 
 /* Mobile nav */
 @media (max-width: 640px) {
+  .card-grid-recentListings {
+    grid-template-columns: 1fr;
+  }
+
   .nav-toggle {
     display: flex;
   }
