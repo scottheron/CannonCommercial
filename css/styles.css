@@ -18,6 +18,8 @@
   --color-section-dark: #0d3c5b;
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --max-width: 1500px;
+  --page-gutter: clamp(1rem, 4vw, 5rem);
+  --section-spacing: clamp(3rem, 8vw, 6rem);
   --header-height: 4rem;
 }
 
@@ -37,17 +39,18 @@ body {
 .site-container {
 	box-shadow: 0px 0px 10px -2px rgba(0,0,0,.25);
 	margin: 0 auto;
+  width: min(100%, var(--max-width));
 	max-width: 1500px;
 }
 
 .header-tagline {
 	border-top: 3px solid rgba(255,255,255,.1);
 	font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	height: 250px;
+  height: auto;
 	position: relative;
 	text-align: center;
 	text-transform: none;
-  padding: 14rem 0 20rem 0;
+  padding: clamp(6rem, 18vw, 14rem) var(--page-gutter) clamp(8rem, 24vw, 20rem);
 }
 
 .featuredListings {
@@ -81,6 +84,7 @@ a:hover {
 
 .container {
   width: min(100%, var(--max-width));
+  padding-inline: var(--page-gutter);
   margin-inline: auto;
 }
 
@@ -99,7 +103,8 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding: 0 3rem 3rem 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .header-inner img {
@@ -120,7 +125,7 @@ a:hover {
 
 .site-nav ul {
   display: flex;
-  gap: 1.5rem;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
   list-style: none;
 }
 
@@ -213,12 +218,12 @@ a:hover {
 
 /* Sections */
 .section {
-  padding: 6rem 0 6rem 0;
+  padding: var(--section-spacing) 0;
   background: white;
 }
 
 .sectionDark {
-  padding: 2rem 0 2rem 0;
+  padding: clamp(1.5rem, 4vw, 2rem) 0;
   background: var(--color-section-dark);
 }
 
@@ -226,7 +231,7 @@ a:hover {
   font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 0 5rem 0 5rem;
+  margin: 0;
   text-align: left;
   color: var(--color-white);
 }
@@ -246,7 +251,7 @@ a:hover {
   font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 0 5rem 0 5rem;
+  margin: 0;
   color: black;
   text-align: center;
 }
@@ -267,14 +272,14 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
-  padding: 0 5rem 0 5rem;
+  padding: 0;
 }
 
 .card-grid-recentListings {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
-  padding: 0 5rem 0 5rem;
+  padding: 0;
 }
 
 .card {
@@ -494,6 +499,45 @@ article.card p {
   opacity: 0.9;
 }
 
+@media (max-width: 1100px) {
+  .card-grid-recentListings {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .site-nav ul {
+    gap: 0.75rem;
+  }
+
+  .site-nav a {
+    font-size: 1rem;
+  }
+
+  .card-grid,
+  .card-grid-recentListings {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #latestListings {
+    flex-wrap: wrap;
+  }
+
+  #latestListing {
+    max-width: min(40%, 12rem);
+  }
+
+  .sectionDark p,
+  .section p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+}
+
 /* Mobile nav */
 @media (max-width: 640px) {
   .card-grid-recentListings {
@@ -504,9 +548,13 @@ article.card p {
     display: flex;
   }
 
+  .header-inner {
+    position: relative;
+  }
+
   .site-nav {
     position: absolute;
-    top: var(--header-height);
+    top: 100%;
     left: 0;
     right: 0;
     background: var(--color-white);
@@ -542,13 +590,36 @@ article.card p {
     position: relative;
   }
 
-  .about-grid,
-  .contact-grid {
+  .hero {
+    background-position: 58% 35%;
+    padding: 2rem 0;
+  }
+
+  .header-tagline {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+
+  .header-tagline p {
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
+  }
+
+  .card-grid,
+  .card-grid-recentListings {
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    background-position: 58% 35%;
-    padding: 3rem 0;
+  .card,
+  .cardEmpty,
+  .cardEmptyDark {
+    padding: 1rem;
+  }
+
+  #latestListings {
+    align-items: flex-start;
+  }
+
+  #latestListing {
+    max-width: 35%;
   }
 }
