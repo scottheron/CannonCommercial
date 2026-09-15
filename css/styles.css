@@ -184,6 +184,10 @@ a:hover {
   color: #c4b9ae;
 }
 
+#companyDescription p {
+  font-size: 1.25rem;
+}
+
 .hero-image {
   margin-inline: auto;
 }
@@ -233,7 +237,8 @@ a:hover {
 }
 
 .sectionDark {
-  padding: clamp(1.5rem, 4vw, 2rem) 0;
+  padding-left: 3rem;
+  padding: clamp(1.5rem, 4vw, 2rem) 0 clamp(1.5rem, 4vw, 2rem) 5rem;
   background: var(--color-section-dark);
 }
 
@@ -264,6 +269,25 @@ a:hover {
   margin: 0;
   color: black;
   text-align: center;
+}
+
+.areasOfExpertise {
+  padding: 0 0 3rem 0;
+}
+
+#areasOfExpertise p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+#areasOfExpertise {
+  padding-bottom: 2rem;
+}
+
+#areasOfExpertiseCards {
+  padding-top: 2rem;
 }
 
 .label-sale {
@@ -311,7 +335,7 @@ a:hover {
 .cardEmptyDark {
   font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
-  /* background: var(--color-text); */
+  background: var(--color-section-dark);
   padding: 1.5rem;
 }
 
@@ -322,6 +346,38 @@ a:hover {
   text-align: left;
   font-weight: 300;
   font-size: 1.25rem;
+}
+
+#areasOfExpertiseCards .cardEmptyDark.contact {
+  position: relative;
+  margin-top: 40px;
+  padding-top: 4rem;
+}
+
+#areasOfExpertiseCards .cardEmptyDark.contact::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background: #808080;
+  transform: translateX(-50%);
+}
+
+#areasOfExpertiseCards .cardEmptyDark.contact::after {
+  content: "\2713";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  display: grid;
+  width: 80px;
+  height: 80px;
+  place-items: center;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: 500;
+  transform: translateX(-50%);
 }
 
 #latestListings {
