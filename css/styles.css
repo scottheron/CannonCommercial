@@ -166,12 +166,18 @@ a:hover {
   text-align: center;
 }
 
-.seattleCityBackground {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../images/Header-6-Light.png");
+.seattleCityBackground1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../images/Backgrounds/Header-6-Light.png");
   background-position: center top;
   background-repeat: no-repeat;
   max-height: 60rem;
-  /* background-size: auto 1000px; */
+}
+
+.seattleCityBackground2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../images/Backgrounds/Header-5-Light.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  max-height: 60rem;
 }
 
 .hero-image {
