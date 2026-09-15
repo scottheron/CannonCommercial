@@ -174,10 +174,14 @@ a:hover {
 }
 
 .seattleCityBackground2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../images/Backgrounds/Header-5-Light.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../images/Backgrounds/Header-5-Light.png");
   background-position: center top;
   background-repeat: no-repeat;
   max-height: 60rem;
+}
+
+#companyTaglineGrey span {
+  color: #c4b9ae;
 }
 
 .hero-image {
