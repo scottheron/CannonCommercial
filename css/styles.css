@@ -180,7 +180,14 @@ a:hover {
   max-height: 60rem;
 }
 
-#companyTaglineGrey span {
+.seattleCityBackground3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../images/Backgrounds/Header-3-Light.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  max-height: 60rem;
+}
+
+.companyTaglineGrey span {
   color: #c4b9ae;
 }
 
@@ -271,6 +278,13 @@ a:hover {
   text-align: center;
 }
 
+.shortSectionHeight {
+  padding-bottom: 0;
+}
+.shortHeight {
+  padding-top: 0;
+}
+
 .areasOfExpertise {
   padding: 0 0 3rem 0;
 }
@@ -298,7 +312,18 @@ a:hover {
   text-shadow: 1px 1px 1px rgba(0,0,0,.15);
   text-transform: uppercase;
   background-color:#27ae60;
-  color: black;
+  color: white;
+}
+
+.label-lease {
+  font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 4px 12px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.15);
+  text-transform: uppercase;
+  background-color: var(--color-section-dark);
+  color: white;
 }
 
 /* Cards */
