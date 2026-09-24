@@ -46,7 +46,15 @@
 
     <section class="section">
       <div class="container">
-        <div class="card-grid">
+        <div class="property-filters" aria-label="Filter properties">
+          <label for="propertyFilter">Show:</label>
+          <select id="propertyFilter">
+            <option value="all">All properties</option>
+            <option value="lease">For lease</option>
+            <option value="sale">For sale</option>
+          </select>
+        </div>
+        <div class="card-grid property-grid">
           <article class="card">
             <img src="images/Current/1621 12th Ave-740x555.png" alt="Condo">
             <p>For Lease | 1621 12th Ave #100</p><br>
@@ -60,6 +68,7 @@
           <article class="card">
             <img src="images/Current/2929 1st Ave-740x555.png" alt="Condo">
             <p>For Lease or Sale | 2929 1st Ave Commercial Condo</p>
+            <span class="label-lease">For Lease</span>
             <span class="label-sale">For Sale</span>
           </article>
           <article class="card">
