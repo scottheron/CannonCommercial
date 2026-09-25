@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cannon Commercial — quality commercial services for your business.">
+  <title>Cannon Commercial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons for phone and mail icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="site-container">
+    <section class="hero navDark">
+      <div class="container header-inner">
+        <a href="#" class="logo">
+          <img src="images/Cannon-Logo-Transparent-white.png" alt="Cannon Commercial Logo">
+        </a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="company.html">Company</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h1>LEASED | Office Space | 2327 W Commodore Way</h1><br>
+        <p2>$26/SF/YR</p2><span class="float-right label-lease">Leased</span><br><br>
+        <p2><strong>Details:</strong></p2><br>
+        <p2><strong>Address:</strong> 2327 W Commodore Way Seattle, WA 98199</p2><br>
+        <p2><strong>Availability:</strong> Immediately</p2><br>
+        <p2><strong>Rent:</strong> $26/SF/YR + NNN</p2><br>
+        <p2><strong>NNN:</strong> $7/SF/YR</p2><br>
+        <p2><strong>Available Space:</strong></p2><br>
+        <p2><strong>3,332 SF –</strong> Stand-alone building features 4 private offices, conference room, open work area, restroom and kitchen.</p2><br>
+        <p2><strong>1,666 SF –</strong> North space features 4 private offices, conference room, open work area, restroom and kitchen.</p2><br>
+        <p2><strong>1,666 SF –</strong> South space features open floor concept.</p2><br>
+      </div>
+    </section>
+
+    <section id="contactUs" class="min-h-screen flex items-center justify-center p-4 sm:p-8">
+      <div class="section w-full max-w-5xl bg-white p-6 sm:p-12 rounded-lg shadow-sm border border-gray-100 my-auto">
+        <!-- Header -->
+        <h1 class="text-3xl sm:text-4xl font-normal text-gray-800 mb-8 pb-4 border-b border-gray-100">
+            Contact Us
+        </h1>
+
+        <!-- Content Grid: 2 Columns -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
+            
+            <!-- Left Column: Form -->
+            <div class="md:col-span-7">
+                
+                <!-- Notification Alert Box -->
+                <div id="statusAlert" class="hidden mb-6 p-4 rounded text-sm transition-all duration-300"></div>
+
+                <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6" novalidate>
+                    
+                    <!-- Name Fields -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">
+                            Name <span class="text-red-500">*</span>
+                        </label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="firstName" class="sr-only">First name</label>
+                                <input 
+                                    type="text" 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    required 
+                                    placeholder="First name"
+                                    class="form-input w-full px-3 py-2 text-gray-800 text-sm"
+                                >
+                                <span class="text-xs text-gray-500 mt-1 block">First</span>
+                            </div>
+                            <div>
+                                <label for="lastName" class="sr-only">Last name</label>
+                                <input 
+                                    type="text" 
+                                    id="lastName" 
+                                    name="lastName" 
+                                    required 
+                                    placeholder="Last name"
+                                    class="form-input w-full px-3 py-2 text-gray-800 text-sm"
+                                >
+                                <span class="text-xs text-gray-500 mt-1 block">Last</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                            Email <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            class="form-input w-full px-3 py-2 text-gray-800 text-sm"
+                        >
+                    </div>
+
+                    <!-- Message / Comment Field -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+                            Comment or Message <span class="text-red-500">*</span>
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            required 
+                            class="form-input w-full px-3 py-2 text-gray-800 text-sm resize-y"
+                        ></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <!-- Submit Button -->
+                        <button 
+                            type="submit" 
+                            id="submitBtn" 
+                            class="btn-submit px-6 py-2.5 text-sm font-medium cursor-pointer flex items-center justify-center space-x-2"
+                        >
+                            <span id="btnText">Submit</span>
+                            <i id="spinner" class="fas me-1 fa-spinner fa-spin hidden"></i>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Right Column: Contact Details -->
+            <div class="md:col-span-5 space-y-6 text-sm text-gray-700 leading-relaxed pt-1">
+                
+                <p class="text-gray-600">
+                    If you have any questions or would like help buying or selling a property please do not hesitate to contact us.
+                </p>
+
+                <div class="space-y-1">
+                    <p class="font-normal text-gray-800">565 13th Avenue</p>
+                    <p class="font-normal text-gray-800">Seattle, WA 98122</p>
+                </div>
+
+                <div class="space-y-2 pt-2">
+                    <p class="flex items-center space-x-2 text-gray-800">
+                        <i class="fas fa-phone text-xs w-4"></i>
+                        <a href="tel:2062920800" class="hover:underline">206-292-0800</a>
+                    </p>
+                    <p class="flex items-center space-x-2 text-gray-800">
+                        <i class="fas fa-envelope text-xs w-4"></i>
+                        <a href="mailto:info@cannoncommercial.com" class="hover:underline">info@cannoncommercial.com</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="sectionDark">
+      <div class="container">
+        <div class="card-grid">
+          <article class="cardEmptyDark contact">
+            <div class="contact-info-title follow-us-content">
+              <p>Connect with Us</p><br>
+              <div class="contact-info-text">
+                <p>Address:<br>565 13th Avenue<br>Seattle, WA 98122</p>
+                <p>Phone:<br>206-292-0800</p>
+                <p>Email:<br>info@cannoncommercial.com</p>
+              </div>
+            </div>
+          </article>
+          <article class="cardEmptyDark contact">
+            <div class="contact-info-title">
+              <p>Latest Listings</p><br>
+              <div id="latestListings" class="contact-info-text">
+                <img id="latestListing" src="images/Latest/2929 1st Ave Commercial Condo (Small).png" alt="Condo">
+                <p>For Lease or Sale | 2929 1st Ave Commercial Condo</p>
+              </div>
+            </div>
+          </article>
+          <article class="cardEmptyDark contact">
+            <div class="contact-info-title">
+              <p>Follow Us</p><br>
+              <div id="followUs" class="social-links">
+                <a href="https://www.facebook.com/CannonCommercial/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.31 0-5 1.69-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.67.33-1 1-1Z" /></svg>
+                </a>
+                <a href="https://www.instagram.com/CannonCommercial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" class="social-icon-dot" /></svg>
+                </a>
+                <a href="https://www.linkedin.com/company/421921" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8H1v12h4V8Zm.25-3.5C5.25 3.4 4.35 2.5 3.25 2.5S1.25 3.4 1.25 4.5s.9 2 2 2 2-.9 2-2ZM13 8H9v12h4v-6c0-1.66.34-3.33 2.5-3.33S18 12.34 18 14v6h4v-7c0-3.87-2.08-5.67-4.99-5.67-1.38 0-2.35.76-3.01 1.48V8Z" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>          
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="sectionDark site-footer">
+        <div>
+          <p>Copyright © 2020 · Cannon Commercial</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <script src="js/main.js"></script>
+</body>
+</html>
