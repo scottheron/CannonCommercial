@@ -392,6 +392,17 @@ a:hover {
   color: white;
 }
 
+.label-sold {
+  font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 4px 12px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.15);
+  text-transform: uppercase;
+  background-color: yellow;
+  color: black;
+}
+
 /* Cards */
 .card-grid {
   display: grid;
@@ -488,6 +499,22 @@ a:hover {
 
 #latestListing {
   max-width: 25%;
+  height: auto;
+}
+
+#recentListings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+}
+
+#recentListings p {
+  margin: 0 0 0 1rem;
+}
+
+#recentListings img {
+  max-width: 6rem;
   height: auto;
 }
 
