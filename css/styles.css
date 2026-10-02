@@ -227,8 +227,8 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--color-white);
-  color: var(--color-primary);
+  background: var(--color-section-dark);
+  color: var(--color-white);
 }
 
 .btn-primary:hover {
@@ -318,6 +318,15 @@ a:hover {
 .section p2 {
   font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  color: black;
+  text-align: left;
+}
+
+.section p3 {
+  font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
   font-weight: 400;
   margin: 0;
   color: black;
@@ -516,6 +525,26 @@ a:hover {
 #recentListings img {
   max-width: 6rem;
   height: auto;
+}
+
+#currentListings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+}
+
+#currentListings img {
+  width: 320px;
+  height: 190px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gap12px {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
 }
 
 .social-links {
