@@ -431,6 +431,13 @@ a:hover {
   padding: 0;
 }
 
+.card-grid-brokers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  padding: 0;
+}
+
 .card {
   font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -527,6 +534,25 @@ a:hover {
   height: auto;
 }
 
+#brokers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+}
+
+#brokers p {
+  margin: 0 0 0 5rem;
+}
+
+#brokers img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;       /* Prevents squishing or distortion */
+  object-position: top;    /* Pins the top edge so the bottom gets cut off */
+  display: block;
+}
+
 #currentListings {
   display: flex;
   flex-direction: row;
@@ -586,6 +612,14 @@ a:hover {
 .social-links a:hover,
 .social-links a:focus-visible {
   color: var(--color-accent);
+}
+
+.contact-info-title a {
+  color: white;
+  text-decoration: none;
+}
+.contact-info-title a:hover {
+  text-decoration: underline;
 }
 
 article.card p {
