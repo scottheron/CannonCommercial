@@ -803,16 +803,40 @@ article.card p {
     grid-template-columns: 1fr;
   }
 
+  .card-grid-brokers {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  #brokers {
+    gap: 1rem;
+  }
+
+  #brokers p {
+    min-width: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  #brokers img {
+    width: 5rem;
+    height: 5rem;
+  }
+
   .nav-toggle {
     display: flex;
   }
 
   .header-inner {
     position: relative;
+    z-index: 101;
   }
 
   .site-nav {
     position: absolute;
+    z-index: 102;
     top: 100%;
     left: 0;
     right: 0;
@@ -842,7 +866,11 @@ article.card p {
   .site-nav a {
     display: block;
     padding: 0.75rem 0;
-    color: white;
+    color: var(--color-text);
+  }
+
+  .navDark .nav-toggle span {
+    background: var(--color-white);
   }
 
   .site-header {
