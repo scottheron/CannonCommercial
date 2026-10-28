@@ -869,7 +869,7 @@ article.card p {
     color: var(--color-text);
   }
 
-  .navDark .nav-toggle span {
+  .nav-toggle span {
     background: var(--color-white);
   }
 
