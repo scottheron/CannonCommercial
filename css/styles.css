@@ -375,6 +375,13 @@ a:hover {
   margin: 0;
 }
 
+#currentListingsTitle p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
 #areasOfExpertise {
   padding-bottom: 2rem;
 }
