@@ -195,6 +195,10 @@ a:hover {
   font-size: 1.25rem;
 }
 
+#homeDescription p {
+  font-size: 1.25rem;
+}
+
 .hero-image {
   margin-inline: auto;
 }
@@ -742,6 +746,14 @@ article.card p {
 
 #contactUs {
   background: var(--color-white);
+}
+
+#contactUs p {
+  font-size: 1.25rem;
+}
+
+.short {
+  padding-top: 0.25rem;
 }
 
 /* Footer */
