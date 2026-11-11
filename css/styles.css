@@ -368,6 +368,10 @@ a:hover {
   padding: 0 0 3rem 0;
 }
 
+.brokers {
+  padding: 0 0 3rem 0;
+}
+
 #areasOfExpertise p {
   text-align: center;
   font-size: 2rem;
@@ -387,6 +391,21 @@ a:hover {
 }
 
 #areasOfExpertiseCards {
+  padding-top: 2rem;
+}
+
+#brokersTitle p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+#brokers {
+  padding-bottom: 2rem;
+}
+
+#brokersCards {
   padding-top: 2rem;
 }
 
@@ -511,6 +530,149 @@ a:hover {
   font-size: 2.5rem;
   font-weight: 500;
   transform: translateX(-50%);
+}
+
+#brokersCards .cardEmptyDark.contact {
+  position: relative;
+  margin-top: 40px;
+  padding-top: 4rem;
+}
+
+#brokersCards .cardEmptyDark.contact::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background: #808080;
+  transform: translateX(-50%);
+}
+
+#brokersCards .cardEmptyDark.contact.chrisGiles::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  display: grid;
+  width: 80px;
+  height: 80px;
+  place-items: center;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: 500;
+  transform: translateX(-50%);
+
+  /* Image configuration */
+  background-image: url("../images/Brokers/ChrisGiles.jpg");
+  background-size: contain;   /* Scales the image nicely inside the 80x80 box */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#brokersCards .cardEmptyDark.contact.joeCannon::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  display: grid;
+  width: 80px;
+  height: 80px;
+  place-items: center;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: 500;
+  transform: translateX(-50%);
+
+  /* Image configuration */
+  background-image: url("../images/Brokers/JoeCannon.jpg");
+  background-size: contain;   /* Scales the image nicely inside the 80x80 box */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#brokersCards .cardEmptyDark.contact.richCannon::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  display: grid;
+  width: 80px;
+  height: 80px;
+  place-items: center;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: 500;
+  transform: translateX(-50%);
+
+  /* Image configuration */
+  background-image: url("../images/Brokers/RichCannon.jpg");
+  background-size: contain;   /* Scales the image nicely inside the 80x80 box */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#brokersCards .cardEmptyDark.contact.chrisHewitt::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  display: grid;
+  width: 80px;
+  height: 80px;
+  place-items: center;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: 500;
+  transform: translateX(-50%);
+
+  /* Image configuration */
+  background-image: url("../images/Brokers/ChrisHewitt.jpg");
+  background-size: contain;   /* Scales the image nicely inside the 80x80 box */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#brokersCards .cardEmptyDark.contact.gloriaTouch::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  display: grid;
+  width: 80px;
+  height: 80px;
+  place-items: center;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: 500;
+  transform: translateX(-50%);
+
+  /* Image configuration */
+  background-image: url("../images/Brokers/GloriaTouch.jpg");
+  background-size: contain;   /* Scales the image nicely inside the 80x80 box */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#brokersCards .cardEmptyDark.contact.johnnyHuynh::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  display: grid;
+  width: 80px;
+  height: 80px;
+  place-items: center;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: 500;
+  transform: translateX(-50%);
+
+  /* Image configuration */
+  background-image: url("../images/Brokers/JohnnyHuynh.jpg");
+  background-size: contain;   /* Scales the image nicely inside the 80x80 box */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #latestListings {
