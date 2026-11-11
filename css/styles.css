@@ -564,7 +564,7 @@ a:hover {
   transform: translateX(-50%);
 
   /* Image configuration */
-  background-image: url("../images/Brokers/ChrisGiles.jpg");
+  background-image: url("/CannonCommercial/images/Brokers/ChrisGiles.jpg");
   background-size: contain;   /* Scales the image nicely inside the 80x80 box */
   background-repeat: no-repeat;
   background-position: center;
@@ -585,7 +585,7 @@ a:hover {
   transform: translateX(-50%);
 
   /* Image configuration */
-  background-image: url("../images/Brokers/JoeCannon.jpg");
+  background-image: url("/CannonCommercial/images/Brokers/JoeCannon.jpg");
   background-size: contain;   /* Scales the image nicely inside the 80x80 box */
   background-repeat: no-repeat;
   background-position: center;
@@ -606,7 +606,7 @@ a:hover {
   transform: translateX(-50%);
 
   /* Image configuration */
-  background-image: url("../images/Brokers/RichCannon.jpg");
+  background-image: url("/CannonCommercial/images/Brokers/RichCannon.jpg");
   background-size: contain;   /* Scales the image nicely inside the 80x80 box */
   background-repeat: no-repeat;
   background-position: center;
@@ -627,7 +627,7 @@ a:hover {
   transform: translateX(-50%);
 
   /* Image configuration */
-  background-image: url("../images/Brokers/ChrisHewitt.jpg");
+  background-image: url("/CannonCommercial/images/Brokers/ChrisHewitt.jpg");
   background-size: contain;   /* Scales the image nicely inside the 80x80 box */
   background-repeat: no-repeat;
   background-position: center;
@@ -648,7 +648,7 @@ a:hover {
   transform: translateX(-50%);
 
   /* Image configuration */
-  background-image: url("../images/Brokers/GloriaTouch.jpg");
+  background-image: url("/CannonCommercial/images/Brokers/GloriaTouch.jpg");
   background-size: contain;   /* Scales the image nicely inside the 80x80 box */
   background-repeat: no-repeat;
   background-position: center;
@@ -669,7 +669,7 @@ a:hover {
   transform: translateX(-50%);
 
   /* Image configuration */
-  background-image: url("../images/Brokers/JohnnyHuynh.jpg");
+  background-image: url("/CannonCommercial/images/Brokers/JohnnyHuynh.jpg");
   background-size: contain;   /* Scales the image nicely inside the 80x80 box */
   background-repeat: no-repeat;
   background-position: center;
